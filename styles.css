@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    position:sticky;
+    top:0;
+    width: 100%;
+    border: 1px solid blue;    
+    color: hsl(233, 73%, 22%);
+    padding: 10px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.menu li {
+    float: left;
+    padding: 5px;
+    margin-bottom: 5px;
+/*    background-color :cyan; */
+    color: dark-blue;
+/*    box-shadow: 5px 5px 0 0 darkcyan; */
+}
+.menu li:hover {
+    background-color :green;
+}
+
+.menu li a {
+  display: block;
+ /* color: dark-blue;*/
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+
+/*Hide dropdown links until they are needed*/
+li ul {
+	display: none;
+    background-color :green;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+	display: inline;
+	float: none;
+    background-color :green;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+    background-color: darkblue;
+	color: #fff;
+}
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+	background: darkblue;
+	color: #fff;
+}
+
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+/*    vertical-align: middle; */
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: black;
+	background: cyan;
+	text-decoration: none;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid blue;    
+    color: black;
+    padding: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 250px repeat(2, 1fr);
+  grid-column-gap: 10px;
+}
+
+.page_content {
+  grid-row: 2;
+  position: relative;
+  overflow-y: auto;
+}
+
+.scrollable_content {
+  position: absolute;
+}
+* {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.grid_layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
+  row-gap: 2rem;
+}
+
+.page_title {
+  grid-row: 1;
+}
+
+.page_content {
+  grid-row: 2;
+}
+
+.page_footer {
+  grid-row: 3;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  background-color: dodgerblue;
+  gap: 10px;
+  padding: 10px;
+}
+.container div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 12px;
+  text-align: justify;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  overflow: hidden;
+  gap: 20px;
+  grid-template-rows: 80px 500px auto 100px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile first */
+.container > * {
+  border: 1px solid green;
+  background-color: beige;
+  padding: 10px;
+  grid-column: col-start / span 12;
+}
+
+@media (min-width: 576px) {
+  .nav {
+    grid-column: col-start / span 2;
+    grid-row: 2 / 4;}
+  .content, .footer {
+    grid-column: col-start 4 / span 9;
+  }
+  nav ul {
+    display: flex;
+/*    justify-content: space-between; */
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    grid-column: col-start / span 2;
+    grid-row: 2 / 4;
+  }
+  .content {
+    grid-column: col-start 3 / span 10;
+    grid-row: 2 / 4;
+  }
+  .footer {
+    grid-column: col-start / span 12;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid blue;    
+    color: black;
+    padding: 15px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+/*  background-color: #04AA6D; */
+  border: none;
+  color: darkblue;
+  padding: 15px;
+  text-align: justify;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-group .button:hover {
+  background-color: dodgerblue;
+}
+
+p {
+  margin-bottom: 1%; /* between paragraphs */
+  }
