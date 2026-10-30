@@ -1,17 +1,6 @@
 <h2>The C3L Blog</h2>
   <p>A set of blog posts.</p>
-  <h1>Debunking Crypto Myths - the movie plot misdirection</h1>
 
-                <p>The media these days is full of misguided reporting on the strength of the cryptographic tools we use. I have not seen it reported that cryptography is a controlled tool with restrictions on its use, and its exportability. I have similarly not seen any realistic reporting of just how good modern cryptography is. So I'm going to offer some points of note and leave it for people to apply some thought to the process.</p>
-
-                <p>There is a set of international treaties on the use of what is termed dual use technology (i.e. technology that has merit in civil business but can be seen as a weapon in the wrong hands). The main impact is that for certain classes of use the effective key length, and the access to the cryptographic algorithm in equipment is restricted. In practice most commercial applications of cryptographic algorithms are incredibly strong. In mobile phones where the radio interface is encrypted for any data captured off the radio link it is quite simply infeasible for anyone to decrypt it and recover the content. In our web browsing and e-commerce it is  similarly infeasible that anyone intercepting our traffic will ever be able to decrypt the content. Quite simply the cryptographic tools we see in use work where they need to.</p>
-
-                <p>There is a lot of guff talked written in the press about breaking encryption. I watch too much TV and too many films where the techie says <em>"it's 128 bit encryption, it'll take me a few hours to break"</em> and all they have is a wee laptop. Think of how big that number is and how many keys fit into 128 bits: it is 2 to the power of 128, roughly this means 1,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000 keys. Now if you can check say 1000 billion keys a minute it would take 1,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000 minutes to check the key space. That's a lot of minutes that add up to a bunch of years - so many that the galaxy will be long gone before you make a sizeable dent in the pile. Quite simply you cannot attack modern encryption using brute force. When you see somebody claiming it on TV remember this - it is fiction and it moves the plot along nicely but it ain't like that in the real world.</p>
-
-                <p>There has been press speculation on "back doors" in crypto-algorithms. This is nonsense - the majority of algorithms we rely on are quite simply too tested, too open and too critical to be purposefully weakened. If I have the key I can decrypt the content - if I don't I can't. That's it. It is an old principle - leave the security to the key and the key alone.</p>
-
-                <p>Of course somebody can get access to the content - that's what keys are all about. You lock it up with a key and you unlock it with a key. If you want to let someone into your house give them the key. If you want someone to access your encrypted content do likewise. Just in case you're wondering - there are no "skeleton" keys in good modern cryptography.</p>
-
-                <p>Some of our cryptography has a finite lifetime though as it depends on "hard" problems remaining hard. The work that I'm looking at for <a style="color: blue; text-decoration: underline;" title="CYBER security" href="http://www.etsi.org/technologies-clusters/clusters/security" target="_blank" rel="noopener noreferrer">ETSI TC CYBER</a> covers the issue of the impact of quantum computing on the viability of cryptography and how to continue to keep one step (at least) ahead of the attackers.</p>
-
-                <p>I'd like readers to go away with the knowledge that TV and movies are doing cryptography a huge dis-service - it works and it works well.</p>
+  <div id="CryptoMyths" class="content" style="display: block;">
+  <iframe src="BlogEntries\CryptoMyths.html" style="width:100%;height:100%" title="CryptoMyths"></iframe>
+</div>
