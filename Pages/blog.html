@@ -1,6 +1,38 @@
 <h2>The C3L Blog</h2>
-  <p>A set of blog posts.</p>
+
+<p>A set of blog posts.</p>
+
+    <div class="btn-group">
+      <button onclick="toggleblog('CryptoMyths')">Crypto Myths</button>
+      <button onclick="toggleblog('CognitionSecurity')">Cognition Security</button>
+      <button onclick="toggleblog('LookNotSee')">Look Not See</button>
+    </div>
 
   <div id="CryptoMyths" class="content" style="display: block;">
   <iframe src="BlogEntries\CryptoMyths.html" style="width:100%;height:100%" title="CryptoMyths"></iframe>
 </div>
+
+  <div id="CognitionSecurity" class="content" style="display: block;">
+  <iframe src="BlogEntries\CognitionSecurity.html" style="width:100%;height:100%" title="CognitionSecurity"></iframe>
+</div>  
+
+  <div id="LookNotSee" class="content" style="display: block;">
+  <iframe src="BlogEntries\LookNotSee.html" style="width:100%;height:100%" title="LookNotSee"></iframe>
+</div>
+
+<script>
+function toggleblog(id) {
+    var div = document.getElementById(id);
+    var divs = ['CryptoMyths', 'CognitionSecurity', 'LookNotSee'];
+    for (var i = 0; i < divs.length; i++) {
+        if (div != document.getElementById(divs[i])) {
+            document.getElementById(divs[i]).style.display = 'none';
+        }
+        else {
+            document.getElementById(divs[i]).style.display = 'none';
+        }
+    }
+    div.style.display = div.style.display == "block" ? "none" : "block";
+}
+</script> 
+

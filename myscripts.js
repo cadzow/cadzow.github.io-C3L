@@ -25,7 +25,6 @@ function togglediv(id) {
     }
     div.style.display = div.style.display == "block" ? "none" : "block";
 }
-    
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
