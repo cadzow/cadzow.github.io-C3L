@@ -6,6 +6,7 @@
       <button onclick="toggleblog('CryptoMyths')">Crypto Myths</button>
       <button onclick="toggleblog('CognitionSecurity')">Cognition Security</button>
       <button onclick="toggleblog('LookNotSee')">Looking without Seeing</button>
+      <button onclick="toggleblog('AITheApocalypse')">AI - The Apocalypse or not?</button>
     </div>
 
   <div id="CryptoMyths" class="content" style="display: block;">
@@ -19,11 +20,15 @@
   <div id="LookNotSee" class="content" style="display: none;">
   <iframe src="BlogEntries\LookNotSee.html" style="width:99%;height:100%" title="LookNotSee"></iframe>
 </div>
+  
+  <div id="AITheApocalypse" class="content" style="display: none;">
+  <iframe src="BlogEntries\AITheApocalypse.html" style="width:99%;height:100%" title="AITheApocalypse"></iframe>
+  </div>
 
 <script>
 function toggleblog(id) {
     var div = document.getElementById(id);
-    var divs = ['CryptoMyths', 'CognitionSecurity', 'LookNotSee'];
+    var divs = ['CryptoMyths', 'CognitionSecurity', 'LookNotSee', 'AITheApocalypse'];
     for (var i = 0; i < divs.length; i++) {
         if (div != document.getElementById(divs[i])) {
             document.getElementById(divs[i]).style.display = 'none';
