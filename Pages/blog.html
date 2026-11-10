@@ -1,15 +1,17 @@
-<h2>The C3L Blog</h2>
-
-<p>A set of blog posts.</p>
+<h2>The C3L Blog <em>A set of blog posts.</em></h2>
 
     <div class="btn-group">
-      <button onclick="toggleblog('CryptoMyths')">Crypto Myths</button>
-      <button onclick="toggleblog('CognitionSecurity')">Cognition Security</button>
-      <button onclick="toggleblog('LookNotSee')">Looking without Seeing</button>
-      <button onclick="toggleblog('AITheApocalypse')">AI - The Apocalypse or not?</button>
+      <button class="button" onclick="toggleblog('AITheApocalypse')">AI - The Apocalypse or not?</button>
+      <button class="button" onclick="toggleblog('CryptoMyths')">Crypto Myths</button>
+      <button class="button" onclick="toggleblog('CognitionSecurity')">Cognition Security</button>
+      <button class="button" onclick="toggleblog('LookNotSee')">Looking without Seeing</button>
     </div>
 
-  <div id="CryptoMyths" class="content" style="display: block;">
+ <div id="AITheApocalypse" class="content" style="display: block;">
+  <iframe src="BlogEntries\AITheApocalypse.html" style="width:99%;height:100%" title="AITheApocalypse"></iframe>
+  </div>
+
+  <div id="CryptoMyths" class="content" style="display: none;">
   <iframe src="BlogEntries\CryptoMyths.html" style="width:99%;height:100%" title="CryptoMyths"></iframe>
 </div>
 
@@ -21,14 +23,11 @@
   <iframe src="BlogEntries\LookNotSee.html" style="width:99%;height:100%" title="LookNotSee"></iframe>
 </div>
   
-  <div id="AITheApocalypse" class="content" style="display: none;">
-  <iframe src="BlogEntries\AITheApocalypse.html" style="width:99%;height:100%" title="AITheApocalypse"></iframe>
-  </div>
-
+ 
 <script>
 function toggleblog(id) {
     var div = document.getElementById(id);
-    var divs = ['CryptoMyths', 'CognitionSecurity', 'LookNotSee', 'AITheApocalypse'];
+    var divs = ['AITheApocalypse','CryptoMyths', 'CognitionSecurity', 'LookNotSee'];
     for (var i = 0; i < divs.length; i++) {
         if (div != document.getElementById(divs[i])) {
             document.getElementById(divs[i]).style.display = 'none';
